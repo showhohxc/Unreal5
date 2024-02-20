@@ -35,9 +35,9 @@
 
 > A B가 정규화가 되었을시
 > ![image](https://github.com/showhohxc/Unreal5/assets/98040028/ae1f0e79-0b58-40bd-a343-cdefb1f6697f)
-![image](https://github.com/showhohxc/Unreal5/assets/98040028/ec7aa2c1-6f7a-478c-b733-b09b36ce2b4d)
+![image](https://github.com/showhohxc/Unreal5/assets/98040028/ec7aa2c1-6f7a-478c-b733-b09b36ce2b4d)</br>
 
-이 때 0 구하기 위해서는 역삼각함수 인 역 코사인 arccos 취해 0값을 취한다.
+이 때 0(세타)값을 구하기 위해서는 역삼각함수 인 역 코사인 arccos 취해 0(세타)값을 취한다.</br>
 ![image](https://github.com/showhohxc/Unreal5/assets/98040028/c49ea110-4a53-40e6-a181-23b8f1132466)
 
 
