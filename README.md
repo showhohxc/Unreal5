@@ -1,4 +1,4 @@
-## Enemy Dot Product
+## Enemy Hit System
 
 ![Front-ezgif com-video-to-gif-converter](https://github.com/showhohxc/Unreal5/assets/98040028/d5fe249a-34b8-493e-8584-cbf2cdf987a3)
 ![Left-ezgif com-video-to-gif-converter](https://github.com/showhohxc/Unreal5/assets/98040028/73c7bdcb-ba3a-4b47-9b0d-ea62db7449f4)
@@ -88,5 +88,6 @@ void ABaseCharacter::DirectionalHitReact(const FVector& ImpactPoint)
 ```
 
 
-> 벡터의 내적을 통해 사이각을 구하고 외적을 통해 회전각을 구한다.
+## 벡터의 내적을 통해 사이각을 구하고 외적을 통해 회전각을 구한다.
+
 ![image](https://github.com/showhohxc/Unreal5/assets/98040028/a6adf14c-9664-4956-9dc3-e85056f68d6b)
