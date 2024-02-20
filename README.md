@@ -41,5 +41,52 @@
 > 이 때 0(세타)값을 구하기 위해서는 역삼각함수 인 역 코사인 arccos 취해 0(세타)값을 취한다.</br>
 ![image](https://github.com/showhohxc/Unreal5/assets/98040028/c49ea110-4a53-40e6-a181-23b8f1132466)
 
+```
+void ABaseCharacter::DirectionalHitReact(const FVector& ImpactPoint)
+{
+	const FVector Forward = GetActorForwardVector();
+	const FVector ImpactLowered(ImpactPoint.X, ImpactPoint.Y, GetActorLocation().Z);	// 적의 충격지점 위치(고도)를 낮춘다
+	const FVector ToHit = (ImpactLowered - GetActorLocation()).GetSafeNormal();	// ImpactPoint - GetActorLocation(); 정규화
+
+	// 위 두 벡터 사이의 각도를 얻는다
+	// ->Forward * ->ToHit = |Forward||ToHit| * cos(세타)
+	// |Forward| = 1, |ToHit| = 1, 그러므로 ->Forward * ->ToHit = cos(세타)
+	const double CosTheta = FVector::DotProduct(Forward, ToHit);
+
+	// FMath::Acos(CosTheta) = 세타
+	double Theta = FMath::Acos(CosTheta);
+	// *내적 후 Acos을 통해 각도를 구한다.
+	// Radian 에서 각도로 변환
+	Theta = FMath::RadiansToDegrees(Theta);
+
+	// *외적으로 표면벡터를 구해 Z의 값으로 양수인지 음수인지 구한다.
+	const FVector CrossProduct = FVector::CrossProduct(Forward, ToHit);
+
+	if (CrossProduct.Z < 0)
+	{
+		Theta *= -1.0f;
+	}
+
+	FName Section("FromBack");
+
+	if (Theta >= -45.0f && Theta < 45.0f)
+	{
+		Section = FName("FromFront");
+	}
+	else if (Theta >= -135.0f && Theta < -45.0f)
+	{
+		Section = FName("FromLeft");
+	}
+	else if (Theta >= 45.0f && Theta < 135.0f)
+	{
+		Section = FName("FromRight");
+	}
+
+	PlayHitReactMontage(Section);
+
+}
+```
 
 
+> 벡터의 내적을 통해 사이각을 구하고 외적을 통해 회전각을 구한다.
+![image](https://github.com/showhohxc/Unreal5/assets/98040028/a6adf14c-9664-4956-9dc3-e85056f68d6b)
