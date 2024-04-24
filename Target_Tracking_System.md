@@ -5,6 +5,9 @@
 #### before
 ![Before-ezgif com-video-to-gif-converter](https://github.com/showhohxc/Unreal5/assets/98040028/1229af75-3bb6-472e-b25b-2f176366988d)<br>
 **기본 Skill 사용시의 캐릭터**<br>
+**타켓팅 시스템에 필요한 로직**<br>
+1. "나" 와 "Target" 간의 Rotation<br>
+2. "나" 와 "Target" 간의 Location<br>
 
 #### After - Target Rotation<br>
 ![After_1-ezgif com-video-to-gif-converter](https://github.com/showhohxc/Unreal5/assets/98040028/2594dd33-eeb0-4066-9c07-3d331616deeb)<br>
