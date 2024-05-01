@@ -10,6 +10,7 @@
 ## Play Technic Battle DEMO Video / 02405.1
 [![Video Label](http://img.youtube.com/vi/mwwzEB7ekw4/0.jpg)](https://youtu.be/mwwzEB7ekw4)
 
+[완벽회피 및 카운터 기술 설명]https://github.com/showhohxc/Unreal5/blob/main/Perfect_Doge%20%26%20Counter_System.md
 //=========================================================================================
 
 ### TODO : 20240425 Version : 02404.2 
