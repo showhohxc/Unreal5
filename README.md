@@ -7,7 +7,7 @@
 
 ### TODO : 20240505 
 <strong>Unreal Version : Unreal 5.1.1<br/> 
-<strong>02405.2 프로젝트 목표 : Guard Parrying 시스템 추가
+<strong>02405.2 프로젝트 목표 : 세키로 Guard Parrying 시스템 추가
 
 ## DESC
 ![afHidTU-ezgif com-video-to-gif-converter](https://github.com/showhohxc/Unreal5/assets/98040028/5a9c718c-2936-47eb-bdd3-4eac737c607a)
