@@ -1,6 +1,6 @@
 ## Introducing My Unreal5 portfolio
 
-### 다운로드 경로 : https://drive.google.com/file/d/1HUxNtx7yTeLLyN92MVNCUylwc5OjGEp2/view?usp=sharing [20240501 version]
+### 다운로드 경로 : https://drive.google.com/file/d/1bJ1WshLmuoMLGgiJQoZlgAHGXpCufQBR/view?usp=sharing [20240506 version]
 ### Input Key : [ LeftMouseBT : Attack / RightMouseBT : LockON / SHIFT : 회피 / K : Skill 창 / ESC : 종료 ]
 
 //===========================================================================================
