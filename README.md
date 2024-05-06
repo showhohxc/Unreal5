@@ -21,7 +21,7 @@
 
 [![Video Label](http://img.youtube.com/vi/IIYdqRWlBD4/0.jpg)](https://youtu.be/IIYdqRWlBD4)
 
-
+[가드 및 패링 기술 설명]https://github.com/showhohxc/Unreal5/blob/main/Guard%20%26%20Parry%20System.md
 
 
 //===========================================================================================
