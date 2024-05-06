@@ -18,7 +18,8 @@
 5. 체간 게이지 구현
 
 ## Play Technic Battle DEMO Video / 02405.2
-[![Video Label](http://img.youtube.com/vi/IIYdqRWlBD4/0.jpg)](https://youtu.be/IIYdqRWlBD4
+
+[![Video Label](http://img.youtube.com/vi/IIYdqRWlBD4/0.jpg)](https://youtu.be/IIYdqRWlBD4)
 
 
 
