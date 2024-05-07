@@ -1,9 +1,9 @@
 ### 1. Player Guard System<br>
 ![Guard-ezgif com-video-to-gif-converter](https://github.com/showhohxc/Unreal5/assets/98040028/e81b90b8-153b-4d7d-9c66-621ee945ab1e)<br/>
 
-![image](https://github.com/showhohxc/Unreal5/assets/98040028/c81552ef-933f-4f6b-8d62-bed7e702263f)
+![image](https://github.com/showhohxc/Unreal5/assets/98040028/c81552ef-933f-4f6b-8d62-bed7e702263f)<br/>
 *AnimGraph Guard State 추가  <br/>
-![image](https://github.com/showhohxc/Unreal5/assets/98040028/a4f5551f-93ae-4122-8013-de5938712850)
+![image](https://github.com/showhohxc/Unreal5/assets/98040028/a4f5551f-93ae-4122-8013-de5938712850)<br/>
 *Guard 행동 유지를 위하여 Guard Pose를 포즈 블렌딩  <br/>
 
 <strong> Player의 Guard State 추가에 따라 PlayerAnimInstance에 Guard 행동시에 PlayerAnimation 상태값 변경을 위하여 bGuardState 작성  <br/>
