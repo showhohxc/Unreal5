@@ -84,7 +84,7 @@ void APlayerCharacter::GetHit_Implementation(const FVector& ImpactPoint, AActor*
 ![Parry-ezgif com-video-to-gif-converter](https://github.com/showhohxc/Unreal5/assets/98040028/383e2749-af3d-4a33-9bad-50a867641272)<br/>
 
 ![image](https://github.com/showhohxc/Unreal5/assets/98040028/612864f7-743f-485d-b60a-af6e297899b6)<br/>
-*Guard Montage에서의 ParryTiming()를 담기 위한 Parry Notyfy 추가  <br/>
+*Guard Montage에서의 ParryTiming()를 담기 위한 Parry Notyfy 추가<br/>
 
 <strong> - Player의 Parry State 추가 <br/>
 <strong> - Parry의 조건문은 Guard 상태에서 특정 프레임에서의 ParryTiming() 발생하고 위의 GetHit() 에서 m_bPlayerHit == true 상태이면 Parry가 발생한다.(Guard와 동일하게 액션시 파티클과 사운드 생성)<br/>
