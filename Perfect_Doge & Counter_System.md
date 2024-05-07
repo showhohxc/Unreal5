@@ -27,8 +27,8 @@ void APlayerCharacter::GetHit_Implementation(const FVector& ImpactPoint, AActor*
 
 ![image](https://github.com/showhohxc/Unreal5/assets/98040028/d4ec1c54-3188-4cca-b7c4-5a2a670e8cb7)
 
-<strong> m_bPerfectDogeActive가 true로 활성화 되면서 Doge 몽타주에 PerfectDogeStart 와 PerfectDogeEnd에 대해 설정한 Notify가 조건에 해당하여 활성화
-<strong> 동시에 SetGlobalTimeDilation(GetWorld(), fDeltaTime)과 나이아가라 Trail Effect를 활성화 후 PerfectDogeEnd시 정상화
+<strong> 1. m_bPerfectDogeActive가 true로 활성화 되면서 Doge 몽타주에 PerfectDogeStart 와 PerfectDogeEnd에 대해 설정한 Notify가 조건에 해당하여 활성화
+<strong> 2. 동시에 SetGlobalTimeDilation(GetWorld(), fDeltaTime)과 나이아가라 Trail Effect를 활성화 후 PerfectDogeEnd시 정상화
 ```
 void APlayerCharacter::PerfectDogeStart(float fDeltaTime)
 {
