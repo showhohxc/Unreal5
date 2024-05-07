@@ -59,3 +59,34 @@ void APlayerCharacter::PerfectDogeEnd(float fDeltaTime)
 
 ### 1. Counter Attack<br>
 ![CounterSkill-ezgif com-video-to-gif-converter](https://github.com/showhohxc/Unreal5/assets/98040028/55edab0d-9387-4fac-b2b8-4d991abe3456) <br/>
+
+<strong> - SkillTarget이 존재하고 CountAttackWidget이 활성화 될 시 Counter 스킬 사용 가능
+
+```
+void APlayerCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	PlayerInputComponent->BindAction(FName("CountSkill_F"), IE_Pressed, this, &APlayerCharacter::CountSkill_F);	
+}
+
+void APlayerCharacter::CountSkill_F()
+{
+	if (SkillTarget != nullptr)
+	{
+		if (CountAttackWidget->IsWidgetVisible())
+		{
+			// CountSkillTest
+			ActionState = EActionState::EAS_Attacking;
+			PlayerAnimInstance->Montage_Play(SkillMontage);
+			PlayerAnimInstance->Montage_JumpToSection(SkillMontageSections[3]);
+
+			if (EffectInstance)
+				EffectInstance->DestroyComponent();
+			UGameplayStatics::SetGlobalTimeDilation(GetWorld(), 1.0f);
+
+			if (CountAttackWidget->IsWidgetVisible())
+				CountAttackWidget->SetVisibility(false);
+		}
+	}
+}
+```
